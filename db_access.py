@@ -38,7 +38,7 @@ json_body = {[
             "duration": 129
         }
     }
-]}
+]
 flag = client.write_points(json_body)
 if not flag:
     print("ERROR in the client write.write_points")
