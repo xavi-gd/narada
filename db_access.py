@@ -42,7 +42,8 @@ json_body = [
 flag = client.write_points(json_body)
 if not flag:
     print("ERROR in the client write.write_points")
-
+if flag:
+    print("Write points TRUE\n")
 results = client.query('SELECT "duration" FROM "test"')
 #results = client.query('SELECT * FROM "test"')
 print(results)
