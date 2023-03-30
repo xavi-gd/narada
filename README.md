@@ -4,7 +4,7 @@
 - name: narada-server 
 - image Version: Ubuntu, 20.04 LTS
 - architecture: x86‑64
-- public IP: 35.226.131.249
+- public IP: 35.232.56.17
 
 ## Credentials
 - user: 
