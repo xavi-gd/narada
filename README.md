@@ -4,15 +4,24 @@
 - Name: narada-server 
 - Image Version: Ubuntu, 20.04 LTS
 - Architecture: x86‑64
+- public IP: 35.226.131.249
 
 ## Credentials
+- user: 
+- password:
+
+---
 
 ## Node-RED
 
 ### Installation
 - url: https://nodered.org/docs/getting-started/raspberrypi
+- default port: 1880
+- current port: 1880
 - commands:
 1. `bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)`
+
+---
 
 ## Influx DB
 
