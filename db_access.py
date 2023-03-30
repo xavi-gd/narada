@@ -46,4 +46,4 @@ if flag:
 results = print(client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WHERE time > now() - 4d GROUP BY "user"'))
 #results = client.query('SELECT * FROM "test"')
 print(results)
-points = results.get_points(tags={'user':'Carol'})
+#points = results.get_points(tags={'user':'Carol'})
