@@ -47,6 +47,5 @@ results = client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WH
 #results = client.query('SELECT * FROM "test"')
 print(results)
 points = results.get_points(tags={'user':'Carol'})
-print(points)
 for point in points:
     print("Time: %s, Duration: %i" % (point['time'], point['duration']))
