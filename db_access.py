@@ -1,9 +1,9 @@
 from influxdb import InfluxDBClient
 
 client = InfluxDBClient(host='localhost', port=8086)
-client.create_database('test')
+client.create_database('pytest')
 print(client.get_list_database())
-client.switch_database('test')
+client.switch_database('pytest')
 json_body = [
     {
         "measurement": "cpu_load_short",
