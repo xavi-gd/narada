@@ -4,7 +4,7 @@ client = InfluxDBClient(host='localhost', port=8086)
 client.create_database('test')
 print(client.get_list_database())
 client.switch_database('test')
-json_body = [
+json_body = {[
     {
         "measurement": "brushEvents",
         "tags": {
@@ -38,7 +38,7 @@ json_body = [
             "duration": 129
         }
     }
-]
+]}
 flag = client.write_points(json_body)
 if not flag:
     print("ERROR in the client write.write_points")
