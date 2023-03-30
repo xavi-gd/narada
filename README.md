@@ -1,10 +1,11 @@
 # narada
 
-## narada-server Virtual Machine on Google Cloud Platform
+## Virtual Machine on Google Cloud Platform
+- Name: narada-server 
 - Image Version: Ubuntu, 20.04 LTS
 - Architecture: x86‑64
 
-## credentials
+## Credentials
 
 ## Node-RED
 
