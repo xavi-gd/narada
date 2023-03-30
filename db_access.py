@@ -4,7 +4,7 @@ client = InfluxDBClient(host='localhost', port=8086)
 client.create_database('test')
 print(client.get_list_database())
 client.switch_database('test')
-json_body = {[
+json_body = [
     {
         "measurement": "brushEvents",
         "tags": {
