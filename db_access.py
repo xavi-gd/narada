@@ -43,4 +43,4 @@ flag = client.write_points(json_body)
 if not flag:
     print("ERROR in the client write.write_points")
 
-client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WHERE time > now() - 4d GROUP BY "user"')
+print(client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WHERE time > now() - 4d GROUP BY "user"'))
