@@ -55,3 +55,7 @@ echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdat
   1. `python3 -m pip install influxdb`
   2. `python3`
   3. `from influxdb import InfluxDBClient`
+  
+ ### INSERT and SELECT data FROM database.autogen.key
+ - url: https://www.influxdata.com/blog/getting-started-python-influxdb/
+ 
