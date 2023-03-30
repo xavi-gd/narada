@@ -6,36 +6,17 @@ print(client.get_list_database())
 client.switch_database('test')
 json_body = [
     {
-        "measurement": "brushEvents",
+        "measurement": "cpu_load_short",
         "tags": {
-            "user": "Carol",
-            "brushId": "6c89f539-71c6-490d-a28d-6c5d84c0ee2f"
+            "host": "server01",
+            "region": "us-west"
         },
-        "time": "2018-03-28T8:01:00Z",
+        "time": "2009-11-10T23:00:00Z",
         "fields": {
-            "duration": 127
-        }
-    },
-    {
-        "measurement": "brushEvents",
-        "tags": {
-            "user": "Carol",
-            "brushId": "6c89f539-71c6-490d-a28d-6c5d84c0ee2f"
-        },
-        "time": "2018-03-29T8:04:00Z",
-        "fields": {
-            "duration": 132
-        }
-    },
-    {
-        "measurement": "brushEvents",
-        "tags": {
-            "user": "Carol",
-            "brushId": "6c89f539-71c6-490d-a28d-6c5d84c0ee2f"
-        },
-        "time": "2018-03-30T8:02:00Z",
-        "fields": {
-            "duration": 129
+            "Float_value": 0.64,
+            "Int_value": 3,
+            "String_value": "Text",
+            "Bool_value": True
         }
     }
 ]
