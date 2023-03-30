@@ -43,7 +43,7 @@ flag = client.write_points(json_body)
 if flag:
     print("ERROR in the client write.write_points")
 
-#print(client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WHERE time > now() - 4d GROUP BY "user"'))
-results = client.query('SELECT * FROM "test"')
+results = print(client.query('SELECT "duration" FROM "test"."autogen"."brushEvents" WHERE time > now() - 4d GROUP BY "user"'))
+#results = client.query('SELECT * FROM "test"')
 print(results.raw)
 points = results.get_points(tags={'user':'Carol'})
