@@ -38,3 +38,11 @@ echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdat
   2. `echo 'deb [signed-by=/etc/apt/trusted.gpg.d/influxdata-archive_compat.gpg] https://repos.influxdata.com/debian stable main' | sudo tee /etc/apt/sources.list.d/influxdata.list`
   3. `sudo apt-get update && sudo apt-get install influxdb`
   4. `sudo service influxdb start`
+
+---
+
+## Python3 and pip (ppackage installer)
+- url: https://www.educative.io/answers/installing-pip3-in-ubuntu
+- commands:
+  1. `sudo apt-get -y install python3-pip`
+  2. `pip3 --version`
