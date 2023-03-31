@@ -25,7 +25,7 @@ if not flag:
     print("ERROR in the client write.write_points")
 if flag:
     print("Write points TRUE\n")
-results = client.query('SELECT * FROM pytest.autogen.measurement')
+results = client.query('SELECT * FROM "pytest.autogen.measurement"')
 
 print(results)
 points = results.get_points(tags={'user':'Carol'})
