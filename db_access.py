@@ -1,22 +1,34 @@
 from influxdb import InfluxDBClient
 
 client = InfluxDBClient(host='localhost', port=8086)
-client.create_database('pytest')
+client.create_database('abertis')
 print(client.get_list_database())
-client.switch_database('pytest')
+client.switch_database('abertis')
 json_body = [
     {
-        "measurement": "cpu_load_short",
+        "measurement": "rack1",
         "tags": {
-            "host": "server01",
+            "id": 39,
             "region": "us-west"
         },
         "time": "2009-11-10T23:00:00Z",
         "fields": {
-            "Float_value": 0.64,
-            "Int_value": 3,
-            "String_value": "Text",
-            "Bool_value": True
+            "current_voltage": 0.64,
+            "SOC": 54,
+            "SOH": 47
+        }
+    },
+{
+        "measurement": "rack1",
+        "tags": {
+            "id": 40,
+            "region": "us-west"
+        },
+        "time": "2009-11-10T23:00:00Z",
+        "fields": {
+            "current_voltage": 0.23,
+            "SOC": 100,
+            "SOH": 99
         }
     }
 ]
@@ -25,7 +37,7 @@ if not flag:
     print("ERROR in the client write.write_points")
 if flag:
     print("Write points TRUE\n")
-results = client.query('SELECT * FROM pytest..measurement')
+results = client.query('SELECT * FROM abertis..rack1')
 
 print(results)
 points = results.get_points(tags={'user':'Carol'})
