@@ -25,7 +25,7 @@ if not flag:
     print("ERROR in the client write.write_points")
 if flag:
     print("Write points TRUE\n")
-results = client.query('SELECT * FROM pytest.autogen.cpu_load_short')
+results = client.query('SELECT * FROM pytest.autogen.mymeas')
 
 print(results)
 points = results.get_points(tags={'user':'Carol'})
