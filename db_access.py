@@ -4,6 +4,7 @@ client = InfluxDBClient(host='localhost', port=8086)
 client.create_database('abertis')
 print(client.get_list_database())
 client.switch_database('abertis')
+
 json_body = [
     {
         "measurement": "rack1",
