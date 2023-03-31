@@ -58,4 +58,23 @@ echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdat
   
  ### INSERT and SELECT data FROM database.autogen.key
  - url: https://www.influxdata.com/blog/getting-started-python-influxdb/
+
+---
+
+## Grafana
+- url: https://grafana.com/docs/grafana/latest/setup-grafana/installation/debian/
+- commands:
+  1. `sudo apt-get install -y apt-transport-https`
+  2. `sudo apt-get install -y software-properties-common wget`
+  3. `sudo wget -q -O /usr/share/keyrings/grafana.key https://apt.grafana.com/gpg.key`
+  4. `echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list`
+  5. `sudo apt-get update`
+  6. `sudo apt-get install grafana`
+  7. `sudo systemctl enable grafana-server.service`
+  8. `sudo systemctl daemon-reload`
+  9. `sudo systemctl start grafana-server`
+  10. `sudo systemctl status grafana-server`
+  
+ ### INSERT and SELECT data FROM database.autogen.key
+ - url: https://www.influxdata.com/blog/getting-started-python-influxdb/
  
