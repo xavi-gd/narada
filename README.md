@@ -82,8 +82,9 @@ echo '393e8779c89ac8d958f81f942f9ad7fb82a25e133faddaf92e15b16e6ac9ce4c influxdat
 
 ## Table Scheme
 payment,device=mobile,product=Notepad,method=credit billed=33,licenses=3i 1434067467100293230
-rack1,module_id=39 key_1=1,key_2=2,key_3=3,key_4=4,key_5=5,key_6=6,key_7=7,key_8=8,key_9=9,key_10=10,key_11=11,key_12=12,key_13=13,key_14=14,key_15=15,key_16=16,key_17=17,key_18=18,key_19=19,key_20=20,key_21=21,key_22=22,key_23=23,key_24=24,key_25=25,key_26=26,key_27=27,key_28=28,key_29=29,key_30=30,key_31=31,key_32=32,key_33=33,key_34=34,key_35=35,key_36=36,key_37=37,key_38=38,key_39=39,key_40=40,key_41=41,key_42=42,key_43=43,key_44=44,key_45=45,key_46=46,key_47=47,key_48=48,key_49=49,key_50=50,key_51=51
+
+`rack1,module_id=39 key_1=1,key_2=2,key_3=3,key_4=4,key_5=5,key_6=6,key_7=7,key_8=8,key_9=9,key_10=10,key_11=11,key_12=12,key_13=13,key_14=14,key_15=15,key_16=16,key_17=17,key_18=18,key_19=19,key_20=20,key_21=21,key_22=22,key_23=23,key_24=24,key_25=25,key_26=26,key_27=27,key_28=28,key_29=29,key_30=30,key_31=31,key_32=32,key_33=33,key_34=34,key_35=35,key_36=36,key_37=37,key_38=38,key_39=39,key_40=40,key_41=41,key_42=42,key_43=43,key_44=44,key_45=45,key_46=46,key_47=47,key_48=48,key_49=49,key_50=50,key_51=51`
 
 
-key_2	key_3	key_4	key_5	key_6	key_7	key_8	key_9	key_10	key_11	key_12	key_13	key_14	key_15	key_16	key_17	key_18	key_19	key_20	key_21	key_22	key_23	key_24	key_25	key_26	key_27	key_28	key_29	key_30	key_31	key_32	key_33	key_34	key_35	key_36	key_37	key_38	key_39	key_40	key_41	key_42	key_43	key_44	key_45	key_46	key_47	key_48	key_49	key_50	key_51
+
  
