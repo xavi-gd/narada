@@ -1,7 +1,8 @@
 # narada
 
 ## Virtual Machine on Google Cloud Platform
-- name: narada-server 
+- name: narada-server
+- type: e2-micro
 - image Version: Ubuntu, 20.04 LTS
 - architecture: x86‑64
 - public IP: 35.232.56.17
