@@ -89,4 +89,6 @@ payment,device=mobile,product=Notepad,method=credit billed=33,licenses=3i 143406
 VM
 /SdT)O=*Md=$|FG
 
+RDP Windows server
+rcwE|Se5S0fxt2A
  
