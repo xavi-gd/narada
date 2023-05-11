@@ -3,6 +3,7 @@ import time
 import json
 import socket
 
+
 def read_unsent_mb_data():
     # Abrir el archivo en modo de lectura
     # archivo = open("/home/xavier_garrigos_tempelgroup/unsent_data/unsent_data_4_frames.txt", "r")
@@ -19,9 +20,12 @@ def read_unsent_mb_data():
 
     return objetos_json_str
 
+
 def read_new_mb_data():
-    new_mb_data = "{\"time\":444,\"values\":[4984,10000,1000,560,600,0,0,2048]}"
-    return new_mb_data
+    mb_data = "{\"time\":444,\"values\":[4984,10000,1000,560,600,0,0,2048]}"
+
+    return mb_data
+
 
 def send_mb_data_via_tcp(unsent_mb_data, new_mb_data):
     FRAME_QTY = 3
