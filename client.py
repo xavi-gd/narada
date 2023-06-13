@@ -16,6 +16,8 @@ def read_unsent_mb_data():
     archivo.close()
 
     objetos_json_str = contenido.split('$')
+    # lista de strings
+    # lista de objetos JSON
     objetos_json = [json.loads(objeto_str) for objeto_str in objetos_json_str]
 
     return objetos_json_str
@@ -28,19 +30,17 @@ def read_new_mb_data():
 
 
 def send_mb_data_via_tcp(unsent_mb_data, new_mb_data):
-    FRAME_QTY = 3
-    FRAME_LEN = 4
-    host = "localhost"
+    host = socket.gethostname()
     puerto = 12345
 
     cliente_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     cliente_socket.connect((host, puerto))
-    cliente_socket.sendall(new_mb_data.encode())
+    unsent_mb_data.append(new_mb_data)
+    msg = ''.join(unsent_mb_data)
+    cliente_socket.sendall(msg.encode('utf-8'))
 
 
 if __name__ == "__main__":
     unsent_mb_data = read_unsent_mb_data()
     new_mb_data = read_new_mb_data()
-    print(unsent_mb_data)
-    print(new_mb_data)
     send_mb_data_via_tcp(unsent_mb_data, new_mb_data)
