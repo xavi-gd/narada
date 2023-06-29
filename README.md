@@ -91,4 +91,6 @@ VM
 
 RDP Windows server
 rcwE|Se5S0fxt2A
- 
+
+ssh gcp 
+4/0AbUR2VMt2Bj2eaenAsQLOEz2XR06U-NiC29Ge_ToH9Rj-XF5RxN_hbpgayqPbVHt9rAiWQ
