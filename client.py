@@ -6,21 +6,17 @@ import socket
 
 def read_unsent_mb_data():
     # Abrir el archivo en modo de lectura
-    # archivo = open("/home/xavier_garrigos_tempelgroup/unsent_data/unsent_data_4_frames.txt", "r")
-    archivo = open("C:\\Users\\BATECNIC01\\PycharmProjects\\Modbus\\4_frames.txt", "r")
+    archivo = open("/home/xavier_garrigos_tempelgroup/unsent_data/unsent_data_4_frames.txt", "r")
+    #archivo = open("C:\\Users\\BATECNIC01\\PycharmProjects\\Modbus\\4_frames.txt", "r")
 
     # Leer y mostrar el contenido del archivo
     contenido = archivo.read()
-
     # Cerrar el archivo
     archivo.close()
 
-    objetos_json_str = contenido.split('$')
-    # lista de strings
-    # lista de objetos JSON
-    objetos_json = [json.loads(objeto_str) for objeto_str in objetos_json_str]
+    contenido = contenido.strip()
 
-    return objetos_json_str
+    return contenido
 
 
 def read_new_mb_data():
@@ -30,14 +26,15 @@ def read_new_mb_data():
 
 
 def send_mb_data_via_tcp(unsent_mb_data, new_mb_data):
-    host = socket.gethostname()
+    host1 = "34.121.116.90"
+    host2 = "192.168.1.2"
     puerto = 12345
 
     cliente_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    cliente_socket.connect((host, puerto))
-    unsent_mb_data.append(new_mb_data)
-    msg = ''.join(unsent_mb_data)
+    cliente_socket.connect((host2, puerto))
+    msg = unsent_mb_data + new_mb_data
     cliente_socket.sendall(msg.encode('utf-8'))
+    print(msg)
 
 
 if __name__ == "__main__":
